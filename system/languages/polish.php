@@ -22,7 +22,7 @@ $NoSolution = "Brak rozwiązania!";// brak rozwiązania delty
 //Spalanie
 $FuelPrice = "Koszt przejechania ";
 $FuelPrice2 = " km wynosi ";
-$NumericFuel = "Wartośći muszą być liczbą!";
+$NumericFuel = "Wartości muszą być liczbą!";
 
 
 
