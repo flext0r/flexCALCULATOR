@@ -1,7 +1,7 @@
 <?php
 
 /*
-calculator.php
+calculator.class.php
 
 flexCALCULATOR
 
@@ -11,11 +11,10 @@ Coded by flext0r © 2017
 require './system/languages/polish.php';
 class Calculator
 {
-	protected $db;
-	
-	public function __construct($connection)
+
+	public function __construct()
 	{
-		//$this->db = $connection;
+		
 	}
 	
 	public function Silnia($N)
@@ -83,11 +82,8 @@ class Calculator
 			$action = $average/100*$length*$price;// koszt paliwa na daną ilość kilometrów znając średnią spalania na 100km.
 			$return = $GLOBALS['FuelPrice'].$length.$GLOBALS['FuelPrice2'].$action." zł";
 		}
-		return $return;
-		
+		return $return;	
 	}
-			
-	
 }
 
 
