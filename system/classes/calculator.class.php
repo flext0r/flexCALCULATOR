@@ -8,13 +8,25 @@ flexCALCULATOR
 Coded by flext0r © 2017
 
 */
-require './system/languages/polish.php';
+require './system/languages/'.$_COOKIE[$cookie_language].'.php';
 class Calculator
 {
 
 	public function __construct()
 	{
 		
+	}
+	public function ChangeLanguage()
+	{
+		if($_COOKIE[$GLOBALS['cookie_language']] == 'polish')
+		{
+			setcookie($GLOBALS['cookie_language'],'english', 2147483647);
+			header("Refresh:0");
+		}else{
+			setcookie($GLOBALS['cookie_language'],'polish', 2147483647);
+			header("Refresh:0");
+		}
+			
 	}
 	
 	public function Silnia($N)

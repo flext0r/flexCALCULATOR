@@ -15,5 +15,10 @@ require_once './system/classes/calculator.class.php';
 
 $Calculator = new Calculator();
 
+if(!isset($_COOKIE[$cookie_language]))
+{
+	setcookie($cookie_language,$cookie_default_language, 2147483647);
+}
+
 
 ?>

@@ -9,6 +9,11 @@ Coded by flext0r © 2017
 require_once './system/includes/main.php';
 require_once './system/classes/ti.class.php';
 
+if(isset($_POST['ChangeLang']))
+{
+	var_dump($Calculator->ChangeLanguage());
+}
+
 
 ?>
 <html>
@@ -31,8 +36,10 @@ require_once './system/classes/ti.class.php';
 			
 		</div>
 		<div class="right">
-			<a href="#" class="button">Zaloguj się</a>
-			<a href="#" class="button">Zarejestruj się</a>
+			<form method="POST">
+			<input type="submit" class="button" name = "ChangeLang" value="Język(<?php echo $_COOKIE[$cookie_language]; ?>)">
+			</form>
+			</a>
 		</div>
 	</div>
 </div>
