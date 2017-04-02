@@ -11,7 +11,7 @@ require_once './system/classes/ti.class.php';
 
 if(isset($_POST['ChangeLang']))
 {
-	var_dump($Calculator->ChangeLanguage());
+	$Calculator->ChangeLanguage();
 }
 
 
