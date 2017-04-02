@@ -4,7 +4,7 @@ Lately i've been thinking about starting some interesting project for me to lear
 Functions:
 
 1. Delta
-2. Strong Lane
+2. Strong Prime
 3. Combustion
 4. Language change(english and polish) <b>[polish by default]</b>
 
