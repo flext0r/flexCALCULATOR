@@ -7,7 +7,7 @@ if(isset($_POST['Send']))
 }
 
 startblock('title');
-echo 'Silnia';
+echo $StrongPrime;
 endblock();
 
 
@@ -16,14 +16,14 @@ echo'
 	<center>
 	<form method="POST">
 	<br>
-	Silnia:
+	'.$StrongPrime.'
 	<br>
 	<input type="text" style="width:20%;" class="input" name="N" placeholder="N">
 	<br>
-	<input type="submit" style="width:10%;" class="button" name = "Send" value="Oblicz">
+	<input type="submit" style="width:10%;" class="button" name = "Send" value="'.$Calculate.'">
 	</form>
 	<br>
-	Wyniki:
+	'.$Results.'
 	</center>
 	<div class="ResultBox">
 	'.$result.'

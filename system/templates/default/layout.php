@@ -29,15 +29,15 @@ if(isset($_POST['ChangeLang']))
 <div class="top">
 	<div class="wrapper">
 		<div class="left">
-			<a href="index.php" class="button">Home</a>
-			<a href="delta.php" class="button">Delta</a>
-			<a href="silnia.php" class="button">Silnia</a>
-			<a href="spalanie.php" class="button">Spalanie</a>
+			<a href="index.php" class="button"><?php echo $Home ?></a>
+			<a href="delta.php" class="button"><?php echo $Delta ?></a>
+			<a href="silnia.php" class="button"><?php echo $StrongPrime ?></a>
+			<a href="spalanie.php" class="button"><?php echo $Combustion ?></a>
 			
 		</div>
 		<div class="right">
 			<form method="POST">
-			<input type="submit" class="button" name = "ChangeLang" value="Język(<?php echo $_COOKIE[$cookie_language]; ?>)">
+			<input type="submit" class="button" name = "ChangeLang" value="<?php echo $Language; echo $_COOKIE[$cookie_language]; ?>">
 			</form>
 			</a>
 		</div>

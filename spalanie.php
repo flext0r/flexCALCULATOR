@@ -7,7 +7,7 @@ if(isset($_POST['Send']))
 
 }
 startblock('title');
-echo 'Spalanie';
+echo $Combustion;
 endblock();
 
 
@@ -16,18 +16,18 @@ echo'
 	<center>
 	<form method="POST">
 	<br>
-	Koszty przejechanej trasy:
+	'.$CostT.'
 	<br>
-	<input type="text" style="width:20%;" class="input" name="length" placeholder="Długość planowanej trasy">
+	<input type="text" style="width:20%;" class="input" name="length" placeholder="'.$LengthR.'">
 	<br>
-	<input type="text" style="width:20%;" class="input" name="average" placeholder="Średnie spalanie na 100km">
+	<input type="text" style="width:20%;" class="input" name="average" placeholder="'.$AverCom.'">
 	<br>
-	<input type="text" style="width:20%;" class="input" name="price" placeholder="Cena za 1L paliwa">
+	<input type="text" style="width:20%;" class="input" name="price" placeholder="'.$PriceL.'">
 	<br>
-	<input type="submit" style="width:10%;" class="button" name = "Send" value="Oblicz">
+	<input type="submit" style="width:10%;" class="button" name = "Send" value="'.$Calculate.'">
 	</form>
 	<br>
-	Wyniki:
+	'.$Results.'
 	</center>
 	<div class="ResultBox">
 	'.$result.'
