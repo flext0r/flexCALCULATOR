@@ -7,7 +7,7 @@ endblock();
 
 
 startblock('content');
-echo 'hello';
+
 
 
 endblock();

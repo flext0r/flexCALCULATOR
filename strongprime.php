@@ -3,7 +3,7 @@ require_once 'system/templates/default/layout.php';
 $result = null;
 if(isset($_POST['Send']))
 {
-	$result = $Calculator->Silnia($_POST['N']);
+	$result = $Calculator->StrongPrime($_POST['N']);
 }
 
 startblock('title');

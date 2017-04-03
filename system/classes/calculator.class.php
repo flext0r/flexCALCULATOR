@@ -28,7 +28,7 @@ class Calculator
 			
 	}
 	
-	public function Silnia($N)
+	public function StrongPrime($N)
 	{
 		$return = null;
 		if(empty($N))
