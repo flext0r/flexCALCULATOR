@@ -17,6 +17,7 @@ $Language = "Language:";
 $Home = "Home";
 $Delta = "Delta";
 $StrongPrime = "Strong Prime";
+$TravelCost = "Travel Cost";
 $Combustion = "Combustion";
 
 //silnia
@@ -26,14 +27,20 @@ $silniaValue = "Strong: ";//po : wyświetla się wartość silni
 //delta
 $NoSolution = "No Solution!";// brak rozwiązania delty
 
-//Spalanie
+//koszty trasy
 $FuelPrice = "Cost of passing ";
 $FuelPrice2 = " km it is ";
 $NumericFuel = "Values must be numeric!";
-$CostT = "Cost of the travel:";
+$CostT = "Cost of the travel";
 $AverCom = "Average combustion per 100km";
 $PriceL = "Price of 1L of fuel";
 $LengthR = "Length of the route";
+
+//spalanie
+$CombT = "Burning is ";
+$CombT2 = " L per 100km";
+$AmountOfFuel = "Amount of fuel";
+$KMT = "Number of kilometers";
 
 
 

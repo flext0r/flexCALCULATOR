@@ -3,12 +3,11 @@ require_once 'system/templates/default/layout.php';
 $result = null;
 if(isset($_POST['Send']))
 {
-	$result = $Calculator->Delta($_POST['A'],$_POST['B'],$_POST['C']);
+	$result = $Calculator->Combustion($_POST['amount'],$_POST['KMT']);
+
 }
-
-
 startblock('title');
-echo $Delta;
+echo $Combustion;
 endblock();
 
 
@@ -17,13 +16,11 @@ echo'
 	<center>
 	<form method="POST">
 	<br>
-	Delta
+	'.$Combustion.'
 	<br>
-	<input type="text" style="width:20%;" class="input" name="A" placeholder="A">
+	<input type="text" style="width:20%;" class="input" name="amount" placeholder="'.$AmountOfFuel.'">
 	<br>
-	<input type="text" style="width:20%;" class="input" name="B" placeholder="B">
-	<br>
-	<input type="text" style="width:20%;" class="input" name="C" placeholder="C">
+	<input type="text" style="width:20%;" class="input" name="KMT" placeholder="'.$KMT.'">
 	<br>
 	<input type="submit" style="width:10%;" class="button" name = "Send" value="'.$Calculate.'">
 	</form>
@@ -32,7 +29,8 @@ echo'
 	</center>
 	<div class="ResultBox">
 	'.$result.'
-	</div>';
+	</div>
+	';
 
 endblock();
 

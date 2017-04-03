@@ -8,7 +8,6 @@ flexCALCULATOR
 Coded by flext0r © 2017
 
 */
-require './system/languages/'.$_COOKIE[$cookie_language].'.php';
 class Calculator
 {
 
@@ -81,7 +80,7 @@ class Calculator
 		return $return;
 	}
 	
-	public function Spalanie($length,$average,$price)
+	public function TravelCost($length,$average,$price)
 	{
 		$return = null;
 		if(empty($length) OR empty($average) OR empty($price))
@@ -96,6 +95,22 @@ class Calculator
 		}
 		return $return;	
 	}
+	public function Combustion($fuel,$km)
+	{
+		$return = null;
+		if(empty($fuel) OR empty($km))
+		{
+			$return = $GLOBALS['emptyForm'];
+		}elseif(!is_numeric($fuel) OR !is_numeric($km))
+		{
+			$return = $GLOBALS['NumericFuel'];
+		}else{
+			$action = $fuel/$km*100;
+			$return = $GLOBALS['CombT'].round($action,1).$GLOBALS['CombT2'];//round = zaokrąglanie liczby do 1 miejsca po przecinku
+		}
+		return $return;
+	}
+		
 }
 
 

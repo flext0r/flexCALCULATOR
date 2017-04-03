@@ -31,8 +31,9 @@ if(isset($_POST['ChangeLang']))
 		<div class="left">
 			<a href="index.php" class="button"><?php echo $Home ?></a>
 			<a href="delta.php" class="button"><?php echo $Delta ?></a>
-			<a href="silnia.php" class="button"><?php echo $StrongPrime ?></a>
-			<a href="spalanie.php" class="button"><?php echo $Combustion ?></a>
+			<a href="strongprime.php" class="button"><?php echo $StrongPrime ?></a>
+			<a href="combustion.php" class="button"><?php echo $Combustion ?></a>
+			<a href="travelcost.php" class="button"><?php echo $TravelCost ?></a>
 			
 		</div>
 		<div class="right">

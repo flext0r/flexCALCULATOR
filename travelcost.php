@@ -3,12 +3,11 @@ require_once 'system/templates/default/layout.php';
 $result = null;
 if(isset($_POST['Send']))
 {
-	$result = $Calculator->Delta($_POST['A'],$_POST['B'],$_POST['C']);
+	$result = $Calculator->TravelCost($_POST['length'],$_POST['average'],$_POST['price']);
+
 }
-
-
 startblock('title');
-echo $Delta;
+echo $TravelCost;
 endblock();
 
 
@@ -17,13 +16,13 @@ echo'
 	<center>
 	<form method="POST">
 	<br>
-	Delta
+	'.$CostT.'
 	<br>
-	<input type="text" style="width:20%;" class="input" name="A" placeholder="A">
+	<input type="text" style="width:20%;" class="input" name="length" placeholder="'.$LengthR.'">
 	<br>
-	<input type="text" style="width:20%;" class="input" name="B" placeholder="B">
+	<input type="text" style="width:20%;" class="input" name="average" placeholder="'.$AverCom.'">
 	<br>
-	<input type="text" style="width:20%;" class="input" name="C" placeholder="C">
+	<input type="text" style="width:20%;" class="input" name="price" placeholder="'.$PriceL.'">
 	<br>
 	<input type="submit" style="width:10%;" class="button" name = "Send" value="'.$Calculate.'">
 	</form>
@@ -32,7 +31,8 @@ echo'
 	</center>
 	<div class="ResultBox">
 	'.$result.'
-	</div>';
+	</div>
+	';
 
 endblock();
 
