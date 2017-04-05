@@ -1,7 +1,7 @@
 <?php
 
 /*
-calculator.class.php
+calculator.php
 
 flexCALCULATOR
 
