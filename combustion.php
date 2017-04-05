@@ -3,7 +3,7 @@ require_once 'system/templates/default/layout.php';
 $result = null;
 if(isset($_POST['Send']))
 {
-	$result = $Calculator->Combustion($_POST['amount'],$_POST['KMT']);
+	$result = Combustion($_POST['amount'],$_POST['KMT']);
 
 }
 startblock('title');

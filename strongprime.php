@@ -3,7 +3,7 @@ require_once 'system/templates/default/layout.php';
 $result = null;
 if(isset($_POST['Send']))
 {
-	$result = $Calculator->StrongPrime($_POST['N']);
+	$result = StrongPrime($_POST['N']);
 }
 
 startblock('title');

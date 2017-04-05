@@ -7,11 +7,10 @@ Coded by flext0r © 2017
 
 */
 require_once './system/includes/main.php';
-require_once './system/classes/ti.class.php';
 
 if(isset($_POST['ChangeLang']))
 {
-	$Calculator->ChangeLanguage();
+	ChangeLanguage();
 }
 
 

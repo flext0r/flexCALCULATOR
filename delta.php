@@ -3,7 +3,7 @@ require_once 'system/templates/default/layout.php';
 $result = null;
 if(isset($_POST['Send']))
 {
-	$result = $Calculator->Delta($_POST['A'],$_POST['B'],$_POST['C']);
+	$result = Delta($_POST['A'],$_POST['B'],$_POST['C']);
 }
 
 
