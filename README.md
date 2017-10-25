@@ -1,5 +1,4 @@
 # flexCALCULATOR
-Lately i've been thinking about starting some interesting project for me to learn even more while having fun at the same time and here we go :)
 
 Functions:
 
