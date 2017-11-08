@@ -43,7 +43,4 @@ $AmountOfFuel = "Ilość paliwa";
 $KMT = "Liczba kilometrów";
 
 
-
-
-
 ?>

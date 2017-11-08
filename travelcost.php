@@ -3,7 +3,7 @@ require_once 'system/templates/default/layout.php';
 $result = null;
 if(isset($_POST['Send']))
 {
-	$result = $Calculator->TravelCost($_POST['length'],$_POST['average'],$_POST['price']);
+	$result = TravelCost($_POST['length'],$_POST['average'],$_POST['price']);
 
 }
 startblock('title');

@@ -19,7 +19,7 @@ if(isset($_POST['ChangeLang']))
 <head>
 
 <link rel="icon" href="system/images/favicon.png" type="image/png"/>
-	<title><?php startblock('title') ?><?php endblock() ?></title>
+	<title><?php echo $flex_version?> - <?php startblock('title')?><?php endblock() ?></title>
 	<link rel="stylesheet" type="text/css" href="system/css/style.css" />
 
 </head>
@@ -52,7 +52,7 @@ if(isset($_POST['ChangeLang']))
 ?>
 </div>
 <div class="footer">
-	Coded by flext0r © 2017
+	<?php echo $flex_version ?> Coded by flext0r © 2017
 </div>
 </div>
 
